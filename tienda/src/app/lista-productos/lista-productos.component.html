@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+
+    <style>
+        .cursor {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="card">
+        <div class="card-header">
+            Lista de productos
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="justify-content-md-center">
+
+                        <th scope="col">Id Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Nombre Producto</th>
+                        <th class="text-center">Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let dato of productos" class="justify-content-md-center">
+
+                        <td>{{dato.id}}</td>
+                        <td>{{dato.valor}}</td>
+                        <td>{{dato.nombreProducto}}</td>
+                        <td><button type="button" class="btn btn-outline-success mr-2" (click)="Editar(dato)">Editar</button>
+                            <button type="button" class="btn btn-danger" (click)="Eliminar(dato)">Eliminar</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

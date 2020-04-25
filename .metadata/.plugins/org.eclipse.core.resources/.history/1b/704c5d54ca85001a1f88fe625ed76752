@@ -1,0 +1,6 @@
+
+server.contextPath=/tienda01
+spring.datasource.url=jdbc:mysql://localhost:3306/tienda
+spring.datasource.username=root
+spring.datasource.password=""
+spring.datasource.driver-calss-name=com.mysql.jdbc.Driver
